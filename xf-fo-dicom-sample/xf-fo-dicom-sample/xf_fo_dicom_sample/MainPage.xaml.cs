@@ -23,7 +23,6 @@ namespace xf_fo_dicom_sample
         {
             var assembly = typeof(MainPage).GetTypeInfo().Assembly;
             Stream stream = assembly.GetManifestResourceStream("xf_fo_dicom_sample.jpeg-baseline.dcm");
-            //Stream stream = assembly.GetManifestResourceStream("xf_fo_dicom_sample.CR_JPG_IR6a.dcm");
 
             var imageFile = DicomFile.Open(stream);
             var dicomImage = new DicomImage(imageFile.Dataset);
