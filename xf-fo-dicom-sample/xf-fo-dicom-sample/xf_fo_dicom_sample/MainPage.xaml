@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:xf_fo_dicom_sample"
+             x:Class="xf_fo_dicom_sample.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Rendering DICOM Image Test"></Label>
+            <Button Text="Load DICOM" Clicked="Button_Clicked" ></Button>
+            <Image x:Name="renderimage"></Image>
+            <ScrollView>
+                <Label x:Name="dicominfo"></Label>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
